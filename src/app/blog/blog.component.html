@@ -1,0 +1,35 @@
+<app-header></app-header>
+<section class="blog style-7 pt-100">
+    <div class="container">
+<div class="content mb-2 pb-2">
+    <div class="row">
+        <div class="col-lg-4 pb-20 " *ngFor="let blog of blogInfo; let i = index">
+            <div class="blog-card style-7 mt-2 mt-lg-0">
+                <div class="img img-cover">
+                    <img [src]="blog.img" alt="">
+                </div>
+                <div class="info pt-20">
+                    <div class="date-tags">
+                        <div class="tags">
+                            <a >{{blog.tags}}</a>
+                        </div>
+                        <a  class="date">
+                            {{blog.date}}
+                        </a>
+                        <span class="color-999"> | </span>
+                        <a href="#" class="author color-999">
+                            By <span class="color-000 fw-bold"> {{blog.postedBy}} </span>
+                        </a>
+                    </div>
+                    <h4 class="title" style="font-size: 15px;">
+                        <a href=""> {{blog.title}} </a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+</div>
+</section>

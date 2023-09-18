@@ -14,6 +14,7 @@ import { GetintoutchComponent } from './getintoutch/getintoutch.component';
 import { FormComponent } from './form/form.component';
 import { MapComponent } from './map/map.component';
 import { LeaderComponent } from './leader/leader.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LeaderComponent } from './leader/leader.component';
     GetintoutchComponent,
     FormComponent,
     MapComponent,
-    LeaderComponent
+    LeaderComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

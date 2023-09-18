@@ -37,7 +37,7 @@
 <!-- ====== end sidemenu navbar ====== -->
 
 <!-- ====== start top navbar ====== -->
-<div class="top-navbar style-7">
+<!-- <div class="top-navbar style-7">
   <div class="container">
       <div class="row justify-content-between gx-0">
           <div class="col-7">
@@ -55,7 +55,7 @@
           <div class="col-5">
               <div class="side_links d-flex justify-content-lg-end">
                   <a href="#" class="me-4"> Contact </a>
-                  <!-- <a href="#" class="me-4"> Portfolio </a> -->
+                  <a href="#" class="me-4"> Portfolio </a>
                   <div class="dropdown border-1 border-start ps-4">
                       <a class="dropdown-toggle fw-bold" href="#" id="navbarDropdown1" role="button"
                           data-bs-toggle="dropdown" aria-expanded="false">
@@ -68,11 +68,12 @@
                           <li><a class="dropdown-item" href="#0"> हिन्दी </a></li>
                       </ul>
                   </div>
+                  <a *ngIf="url" class="btn-sm btn-block btn-primary">Login</a>
               </div>
           </div>
       </div>
   </div>
-</div>
+</div> -->
 <!-- ====== end top navbar ====== -->
 
 <!-- ====== start navbar ====== -->
@@ -90,13 +91,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-4">
               <li class="nav-item dropdown">
-                  <a class="nav-link active" href="index.html">Home</a>
+                  <a class="nav-link" [ngClass]="url=='/home'?'active':''" routerLink="/home" >Home</a>
               </li>
               <li class="nav-item dropdown">
-                  <a class="nav-link " href="comming-soon.html">About EITy</a>
+                  <a class="nav-link " >About EITy</a>
               </li>
               <li class="nav-item dropdown">
-                  <a class="nav-link " href="comming-soon.html">Services</a>
+                  <a class="nav-link " >Services</a>
               </li>
               <!-- <li class="nav-item dropdown">
                   <a class="nav-link " href="comming-soon.html">Products</a>
@@ -107,7 +108,7 @@
                   </a>
               </li> -->
               <li class="nav-item">
-                  <a class="nav-link" href="comming-soon.html">
+                  <a class="nav-link" [ngClass]="url=='/Blog'?'active':''" routerLink="/Blog">
                       blog
                   </a>
               </li>
@@ -121,7 +122,7 @@
           <div class="nav-side">
               <div class="d-flex align-items-center">
 
-                  <a href="#0" class="side_menu_btn">
+                  <a  class="side_menu_btn">
                       <img src="assets/img/icons/4dots.png" alt="">
                   </a>
               </div>
