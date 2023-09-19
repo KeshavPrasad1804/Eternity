@@ -1,22 +1,22 @@
 <!-- ====== start sidemenu navbar ====== -->
 <div class="side_menu style-7" id="side_menu">
-  <a href="#0" class="side_menu_cls">
+  <a  class="side_menu_cls">
       <img src="assets/img/icons/4dots.png" alt="">
   </a>
   <div class="content">
       <div class="logo">
-          <a href="#" class="w-100">
+          <a  class="w-100">
              <h2>EternITy</h2>
           </a>
       </div>
       <div class="pages_links">
           <ul>
-              <li><a href="#" class="active">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <!-- <li><a href="#">Products</a></li> -->
-              <li><a href="#">Services</a></li>
-              <!-- <li><a href="#">Portfolio</a></li> -->
-              <li><a href="#">Blog</a></li>
+              <li><a  class="active">Home</a></li>
+              <li><a >About Us</a></li>
+              <!-- <li><a >Products</a></li> -->
+              <li><a >Services</a></li>
+              <!-- <li><a >Portfolio</a></li> -->
+              <li><a >Blog</a></li>
               <li><a routerLink="/contact">Contact</a></li>
           </ul>
       </div>
@@ -24,10 +24,10 @@
           <h5> get in touch </h5>
           <div class="row">
               <div class="col-lg-6">
-                  <a href="#"> <i class="fal fa-phone-alt me-2"></i> (+91) 8270 454 236</a>
+                  <a > <i class="fal fa-phone-alt me-2"></i> (+91) 8270 454 236</a>
               </div>
               <div class="col-lg-6">
-                  <a href="#"> <i class="fal fa-envelope me-2 mt-4 mt-lg-0"></i> eternityskg@gmail.com </a>
+                  <a > <i class="fal fa-envelope me-2 mt-4 mt-lg-0"></i> eternityskg@gmail.com </a>
               </div>
           </div>
       </div>
@@ -42,11 +42,11 @@
       <div class="row justify-content-between gx-0">
           <div class="col-7">
               <div class="top_info">
-                  <a href="#" class="me-4">
+                  <a  class="me-4">
                       <i class="fas fa-envelope-open me-1 color-blue7"></i>
                       <span>eternityskg@gmail.com</span>
                   </a>
-                  <a href="#">
+                  <a >
                       <i class="fas fa-phone me-1 color-blue7"></i>
                       <span>(+91) 8270 454 236</span>
                   </a>
@@ -54,18 +54,18 @@
           </div>
           <div class="col-5">
               <div class="side_links d-flex justify-content-lg-end">
-                  <a href="#" class="me-4"> Contact </a>
-                  <a href="#" class="me-4"> Portfolio </a>
+                  <a  class="me-4"> Contact </a>
+                  <a  class="me-4"> Portfolio </a>
                   <div class="dropdown border-1 border-start ps-4">
-                      <a class="dropdown-toggle fw-bold" href="#" id="navbarDropdown1" role="button"
+                      <a class="dropdown-toggle fw-bold"  id="navbarDropdown1" role="button"
                           data-bs-toggle="dropdown" aria-expanded="false">
                           English
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                          <li><a class="dropdown-item" href="#0"> தமிழ் </a></li>
-                          <li><a class="dropdown-item" href="#0"> മലയാളം </a></li>
-                          <li><a class="dropdown-item" href="#0"> తెలుగు </a></li>
-                          <li><a class="dropdown-item" href="#0"> हिन्दी </a></li>
+                          <li><a class="dropdown-item" > தமிழ் </a></li>
+                          <li><a class="dropdown-item" > മലയാളം </a></li>
+                          <li><a class="dropdown-item" > తెలుగు </a></li>
+                          <li><a class="dropdown-item" > हिन्दी </a></li>
                       </ul>
                   </div>
                   <a *ngIf="url" class="btn-sm btn-block btn-primary">Login</a>
@@ -79,7 +79,7 @@
 <!-- ====== start navbar ====== -->
 <nav class="navbar navbar-expand-lg navbar-light style-7">
   <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" >
           <h2>EternITy</h2>
           <img src="assets/img/logo" alt="">
       </a>
@@ -113,18 +113,20 @@
                   </a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" routerLink="/contact">
+                  <a class="nav-link" routerLink="/contact" [ngClass]="url=='/contact'?'active':''" >
                       <img src="assets/img/icons/nav_icon/price.png" alt="" class="icon-15 me-1">
                       contact
                   </a>
               </li>
           </ul>
           <div class="nav-side">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center" [ngClass]="url=='/Blog'?'':'d-none'" >
+                <h6 style="margin-right: 10PX;" > Welcome Keshav Prasad !</h6>
+                <button class="btn rounded-pill bg-blue4 fw-bold text-white text-light fs-15px">Login</button>
 
-                  <a  class="side_menu_btn">
+                  <!-- <a  class="side_menu_btn">
                       <img src="assets/img/icons/4dots.png" alt="">
-                  </a>
+                  </a> -->
               </div>
           </div>
       </div>

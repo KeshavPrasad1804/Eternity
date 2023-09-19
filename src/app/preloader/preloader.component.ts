@@ -10,6 +10,6 @@ export class PreloaderComponent implements OnInit {
     setTimeout(()=>{
       let preloader=document.querySelector("#preloader") as HTMLDivElement ;
     preloader.classList.add("isdone");
-    },1500)  }
+    },500)  }
 
 }
