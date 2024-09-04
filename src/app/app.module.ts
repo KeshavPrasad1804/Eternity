@@ -15,6 +15,7 @@ import { FormComponent } from './form/form.component';
 import { MapComponent } from './map/map.component';
 import { LeaderComponent } from './leader/leader.component';
 import { BlogComponent } from './blog/blog.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,13 +29,14 @@ import { BlogComponent } from './blog/blog.component';
     ContactComponent,
     GetintoutchComponent,
     FormComponent,
+    
     MapComponent,
     LeaderComponent,
     BlogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,  FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

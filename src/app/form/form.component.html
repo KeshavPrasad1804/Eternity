@@ -3,7 +3,7 @@
       <div class="content">
           <div class="row justify-content-center">
               <div class="col-lg-8">
-                  <form action="#" class="form" method="post">
+                  <form  class="form">
                       <p class="text-center text-danger fs-12px mb-30">The field is required mark as *</p>
                       <div class="row">
                           <div class="col-lg-6">
@@ -13,7 +13,7 @@
                           </div>
                           <div class="col-lg-6">
                               <div class="form-group mb-20">
-                                  <input type="text" name="email" class="form-control" placeholder="Email Address *" required>
+                                  <input type="text" name="email" class="form-control" [ngModel]="userEmail" placeholder="Email Address *" required>
                               </div>
                           </div>
                           <div class="col-lg-6">
@@ -29,7 +29,7 @@
 
                           <div class="col-lg-12">
                               <div class="form-group">
-                                  <textarea rows="10" class="form-control" placeholder="How can we help you?"></textarea>
+                                  <textarea rows="10" class="form-control" [ngModel]="message" placeholder="How can we help you?"></textarea>
                               </div>
                           </div>
                           <div class="col-lg-12 text-center">
@@ -41,7 +41,10 @@
                               </div>
                           </div>
                           <div class="col-lg-12 text-center">
-                              <input type="submit" value="Send Your Request" class="btn rounded-pill bg-blue4 fw-bold text-white text-light fs-12px">
+                            <a href="mailto:wetisddev@gmail.com">
+                                <input type="submit" value="Send Your Request" class="btn rounded-pill bg-blue4 fw-bold text-white text-light fs-12px">
+                            </a>
+                             
                           </div>
                       </div>
                   </form>
